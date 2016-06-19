@@ -77,6 +77,13 @@ a {
     max-width: 50em;
 }
 
+img {
+    width: 80%;
+}
+
+.figure, img {
+    text-align: center;
+}
 
 
 
