@@ -1,3 +1,89 @@
-Projects:
+<!doctype html>
+<!--
+    Source: https://github.com/jtjj222/jtjj222.github.io
+    Built with https://html5boilerplate.com/
+-->
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Portfolio - Justin Michaud</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-No Clue - <a href="noclue/index.html">html edition</a>
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/typeplate.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header>
+            <h1>Justin Michaud</h1>
+            <h5>Junior Developer</h5>
+            <p><a href="https://github.com/jtjj222">Github</a> - <a href="resume.pdf">Resume</a></p>
+        </header>
+
+        <h2>Work In Progress</h2>
+        <div class="projects">
+            <div>
+                <img src="img/ask1.png" />
+                <h3>AnySoftKeyboard</h3>
+                <p>Open Source Contribution: I am working with the developers of the popular AnySoftKeyboard project to implement Gesture Typing, similar to the stock Google keyboard. There exist no Open Source gesture keyboards available for Android, and the AnySoftKeyboard team is very receptive to new contributors. <a href="https://github.com/AnySoftKeyboard/AnySoftKeyboard">Source</a></p>
+            </div>
+            <div>
+                <img src="img/ask1.png" />
+                <h3>Cheap VR Motion Tracking</h3>
+                <p>Using lasers to scan across the room, the position of a Google Cardboard VR headset is calculated by timing how long it takes for the lasers to hit an Arduino. I hope to acheive most of the effect of an HTC Vive, with one tenth the cost. In order to solve the problem of keeping the scan rate constant, I plan to use an IR emiter and receiver to synchronize the laser to the Arduino. <a href="https://github.com/jtjj222/position-light-tracker">Source</a></p>
+            </div>
+        </div>
+
+        <h2>Recent Projects</h2>
+        <div class="projects">
+            <div>
+                <img src="img/sacy1.png" />
+                <h3>SACY Lending Library</h3>
+                <p>Created a web application to track clients, donations and visits using Python and Django. It produced reports to gain insight into how clients use their services. Statistics allowed SACY to seek funding, find areas to improve, and eliminate manual labour – to focus on helping at-risk youth. I collected requirements from non-technical users, and iterated frequently to refine them to ensure it created value.</p>
+            </div>
+            <div>
+                <img src="img/spaceshooter1.png" />
+                <h3>Space Shooter with Head Tracking</h3>
+                <p>A shooter game for Google Cardboard that uses computer vision to track the position of your head, allowing you to doge obstacles and shoot enemies. Built for mhacks 8. <a href="https://github.com/jtjj222/mhacks-8-space-shooter">Source</a></p>
+            </div>
+            <div>
+                <img src="img/nat1.png" />
+                <h3>Open Source Remote Support</h3>
+                <p>While at the YMCA, I developed a open-source remote support tool for John Island Camp using Java and UDP hole-punching. I needed quick and simple ssh access. It used Netty and utp to tunnel multiple tcp connections over the network, and a small discovery server to handle connecting clients. It used less bandwidth and was easier to set up than off the shelf solutions. <a href="https://github.com/jtjj222/remote-support">Source</a></p>
+            </div>
+            <div>
+                <img src="img/transit1.png" />
+                <h3>Sudbury Transit</h3>
+                <p>A small, Open Source Android transit application using the Sudbury Open Data API, available on F-Droid. It
+allowed me to contribute to Open Source and my community. <a href="https://github.com/jtjj222/Sudbury-Transit">Source</a></p>
+            </div>
+            <div>
+                <img src="img/game1.png" />
+                <h3>Game Design Unit</h3>
+                <p>In High School, I worked to create a video game design unit for my computer science class, using Java and libgdx <a href="https://github.com/jtjj222/Libgdx-demos">Source</a></p>
+            </div>
+            <div>
+                <img src="img/raytrace.png" />
+                <h3>Raytracer</h3>
+                <p>A small raytracer, implemented in pure c++ with no libraries. <a href="https://github.com/jtjj222/raytracer">Source</a></p>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
