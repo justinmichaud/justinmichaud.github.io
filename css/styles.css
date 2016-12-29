@@ -8,8 +8,13 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
+h3 {
+    font-size: 2.25em;
+}
+
 p {
     color: #fff;
+    font-size: 0.9em;
 }
 
 header {
@@ -59,7 +64,7 @@ body>h2 {
 
 .projects div>img {
     width: 100%;
-    max-width: 30em;
+    max-width: 25em;
     display:block;
     margin: 0 auto;
 }
@@ -67,17 +72,7 @@ body>h2 {
 .projects div {
     flex-grow: 1;
     flex-shrink: 1;
-    max-width: 40em;
+    max-width: 25em;
     margin: 0.5em;
-}
-
-.detail {
-    display:none;
-}
-
-.detail.active {
-    display:block;
-    position: fixed;
-    width: 30em;
 }
 
