@@ -56,10 +56,17 @@ div a {
 }
 
 .projects div>h3, .projects div>p {
-    text-align: justify;
     margin: 0;
     margin-top: 20px;
     padding: 0;
+}
+
+.projects div>p {
+    text-align: justify;
+}
+
+.projects div>h3 {
+    text-align: center;
 }
 
 .projects div>img {
