@@ -1,5 +1,5 @@
 body {
-    background-color: #7a3b69;
+    background-color: #37862A;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -19,7 +19,7 @@ p {
 
 header {
     width:100%;
-    background-color: #be3e82;
+    background-color: #1a630f;
     margin: 0;
     padding: 5em 0;
 
@@ -28,7 +28,7 @@ header {
 
 header a {
     text-decoration: none;
-    color: #dfbbb1;
+    color: #FFF;
 }
 
 body>h2 {
@@ -49,10 +49,12 @@ body>h2 {
 }
 
 div a {
+    display: inline-block;
     color: #fff;
-    background-color: #692a58;
+    background-color: #094300;
     text-decoration: none;
-    padding: 0.3em;
+    padding: 0.1em;
+    margin: 0 0.3em;
 }
 
 .projects div>h3, .projects div>p {
