@@ -1,0 +1,180 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}
+%\usepackage{showframe}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Justin}{Michaud}{ \urlstyle{same}\href{http://justinmichaud.com}{justinmichaud.com}\\
+\href{mailto:justin@justinmichaud.com}{justin@justinmichaud.com} | 226-505-5463 | \href{https://github.com/jtjj222}{github.com/jtjj222}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.3\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{University of Waterloo}
+\descript{1B Computer Science}
+\location{Sept 2016 - Present | Waterloo ON}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Over 10000 lines:}
+Java\\
+\location{Over 1000 lines:}
+PHP \textbullet{} Python \textbullet{} C \\
+\location{Have Used:}
+Racket (LISP) \textbullet{} Ruby \textbullet{} SQL\\
+\location{Frameworks/Tools:}
+Arduino \textbullet{} Android \textbullet{} OpenGL \textbullet{} Linux \textbullet{} TCP/UDP\\
+\sectionsep
+\subsection{Soft Skills}
+\textbullet{} Experience collecting requirements from non-technical users (see contract work)
+
+\section{Interests}
+\location{Music:}
+\textbullet{} 2nd Oboe for the Waterloo University Orchestra, Jan 2017 – Present\\
+\location{Technical:}
+\textbullet{} Participant of Hack the North 2016, MHacks 8, TerribleHacks 2016\\
+\textbullet{} Writing BASIC programs for my Commodore 64\\
+\location{Community Involvement:}
+\textbullet{} 2010 United Way Campaign Chair
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.69\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Employment Experience}
+\runsubsection{PagerDuty}
+\descript{| Software Engineering Intern }
+\location{May 2017 – Aug 2017 | Toronto, ON}
+\sectionsep
+
+\runsubsection{Sudbury Action Centre for Youth}
+\descript{| Contractor }
+\location{July 2016 – Aug 2016 | Sudbury, ON}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed/deployed web application to track clients, donations and services
+\item Applied new tools (Python and Django) quickly to increase maintainability
+\item Eliminated a labour shift, produced data to seek funding and find areas to improve
+\item Collected requirements and feedback to ensure business value was created
+\end{tightemize}
+\sectionsep
+
+\runsubsection{YMCA}
+\descript{| Software developer \& I.T. Assistant }
+\location{June 2014 – Sep 2016 | Sudbury, ON}
+\begin{tightemize}
+\item Developed open-source remote support tool using Java, Netty and UDP hole-punching to tunnel TCP connections without port forwarding; Used less data, was easier to use than existing solutions
+\item Built public job board using PHP and MySQL; used by hundreds of clients, ~20 job counsellors
+\item Introduced Twig templates to separate display and business logic, eliminate XSS and CSRF
+\item Introduced prepared queries to eliminate SQL injection
+\item Wrote Python scripts to manage public resource Linux computers with automatic logout, and remote management
+\end{tightemize}
+\sectionsep
+
+\section{Projects}
+\runsubsection{AnySoftKeyboard}
+\descript{| Open Source Contributor }
+\location{Dec 2016 - Present}
+\begin{tightemize}
+\item Contributed Gesture Typing feature to the AnySoftKeyboard project to create the first open source swipe keyboard for Android (work in progress)
+\item Developed code to match gesture input to predicted paths, test suite to measure accuracy
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Motion Tracking Space Shooter}
+\descript{| MHacks 8 Project }
+\location{Oct 2016 | Detroit, MI}
+\begin{tightemize}
+\item Created a shooter game for Google Cardboard with Java and OpenGL 
+\item Uses BoofCV running on a laptop to track the position of player’s head, allowing them to shoot enemies and dodge obstacles
+\item Full source code at \href{http://justinmichaud.com}{justinmichaud.com}
+\end{tightemize}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}

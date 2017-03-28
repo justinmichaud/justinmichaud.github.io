@@ -39,13 +39,8 @@ body>h2 {
 .projects {
     width: 100%;
     margin: 0;
-    padding: 0 0.5em;
+    padding: 0;
     box-sizing: border-box;
-
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 div a {
@@ -59,12 +54,13 @@ div a {
 
 .projects div>h3, .projects div>p {
     margin: 0;
-    margin-top: 20px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
     padding: 0;
 }
 
 .projects div>p {
-    text-align: justify;
+    text-align: left;
 }
 
 .projects div>h3 {
@@ -78,16 +74,41 @@ div a {
     margin: 0 auto;
 }
 
-.projects div {
-    flex-grow: 1;
-    flex-shrink: 1;
-    max-width: 25em;
-    margin: 0.5em;
+.projects>div {
+    margin: auto;
+    margin-bottom: 3em;
+
+    max-width: 50em;
 }
 
 .text {
-    padding: 0 0.5em;
+    padding: 0.5em;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
+
     max-width: 50em;
+}
+
+@media (min-width: 50em) {
+    .projects>div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .projects div.left {
+        max-width: 33%;
+        margin-right: 2em;
+    }
+
+    .projects div.left>img {
+        width: 100%;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .projects div>h3, .text {
+        margin-top: 0;
+        padding-top: 0;
+    }
 }

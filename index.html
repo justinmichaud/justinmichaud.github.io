@@ -29,7 +29,7 @@
         <header>
             <h1>Justin Michaud</h1>
             <h5>Junior Developer | Open Source Enthusiast</h5>
-            <p><a href="https://github.com/jtjj222">Github</a> - <a href="mailto:hello@justinmichaud.com">Email</a> - <a href="resume.pdf">Resume</a></p>
+            <p><a href="https://github.com/jtjj222">Github</a> - <a href="mailto:hello@justinmichaud.com">Email</a> - <a href="resume/resume.pdf">Resume</a></p>
         </header>
 
         <h2>About Me</h2>
@@ -37,48 +37,56 @@
             <p>I am an enthusiastic Computer Science student at the University of Waterloo in Canada. I can quickly apply new tools to my projects, and I have delivered, supported and maintained applications for non-technical clients. I have experience building applications using Java, PHP, Python, MySQL, Linux and Android. You can contact me at <a href="mailto:hello@justinmichaud.com">hello@justinmichaud.com</a></p>
         </div>
 
-        <h2>Recent Projects</h2>
+        <h2>Projects</h2>
         <div class="projects">
             <div>
-                <img src="img/ask1.png" />
-                <h3>AnySoftKeyboard</h3>
-                <p>Open Source Contribution: I am working with the maintainer of the popular AnySoftKeyboard project to implement Gesture Typing, similar to the stock Google keyboard. This is the first Open Source gesture keyboard available for Android. My contributions include the code that generates simulated paths and matches them to the user input.<a href="https://github.com/AnySoftKeyboard/AnySoftKeyboard">Source</a></p>
+                <div class="left"><img src="img/ask1.png" /></div>
+                <div class="text">
+                    <h3>AnySoftKeyboard</h3>
+                    <p>Open Source Contribution: I am working with the maintainer of the popular AnySoftKeyboard project to implement Gesture Typing, similar to the stock Google keyboard. This will be the first Open Source gesture keyboard available for Android. My contributions include code that generates simulated paths and matches them to the user input, as well as a test suite to measure accuracy. <a href="https://github.com/AnySoftKeyboard/AnySoftKeyboard">Source</a></p>
+                </div>
             </div>
             <div>
-                <img src="img/vr1.jpg" />
-                <h3>Cheap VR Motion Tracking</h3>
-                <p>Work in progress: I am working to create a cheap, DIY alternative to the HTC Vive using Google Cardboard and Arduino. Using mirrors to scan line-lasers across the room, the position of the controller can be calculated by timing how long it takes for the laser to reach a photoresistor. To synchronize the start of the laser sweep on the emitter and receiver, I plan to use an off-the-shelf IR LED and receiver.<a href="https://github.com/jtjj222/position-light-tracker">Source</a></p>
+                <div class="left"><img src="img/sacy1.png" /></div>
+                <div class="text">
+                    <h3>Sudbury Action Centre for Youth</h3>
+                    <p>Created a web application to track clients, donations and client visits for the Sudbury Action Centre for Youth. Using Python and Django, it produced data that allowed them to gain insight into how clients use their services. I collected requirements from non-technical users, iterated frequently to ensure the application created value, and learned a new set of tools to increase maintainability.</p>
+                </div>
             </div>
             <div>
-                <img src="img/sacy1.png" />
-                <h3>SACY Lending Library</h3>
-                <p>Created a web application to track clients, donations and client visits for the Sudbury Action Centre for Youth. Using Python and Django, it produced reports to gain insight into how clients use their services. Accurate data allowed SACY to seek funding, find areas to improve, and eliminate manual labour, allowing them to focus on the already-difficult task of helping at-risk youth. I collected requirements from non-technical users, and iterated frequently to ensure the application created value.</p>
+                <div class="left"><img src="img/spaceshooter1.png" /></div>
+                <div class="text">
+                    <h3>VR Head Tracking</h3>
+                    <p>A shooter game for Google Cardboard that uses BoofCV to track the position of your head, allowing you to doge obstacles and shoot enemies. Using Bluetooth, a TCP connection allowed head tracking data to be sent to the android phone in the headset. Built using OpenGL and LibGDX for Mhacks 8. <a href="https://github.com/jtjj222/mhacks-8-space-shooter">Source</a></p>
+                </div>
             </div>
             <div>
-                <img src="img/spaceshooter1.png" />
-                <h3>VR Head Tracking</h3>
-                <p>A shooter game for Google Cardboard that uses computer vision to track the position of your head, allowing you to doge obstacles and shoot enemies. Built for mhacks 8. <a href="https://github.com/jtjj222/mhacks-8-space-shooter">Source</a></p>
+                <div class="left"><img src="img/nat1.png" /></div>
+                <div class="text">
+                    <h3>Remote Support</h3>
+                    <p>An open-source remote support tool using Java and UDP hole-punching, developed to provide quick and simple ssh access through a NAT without port forwarding. It used Netty and UTP, a reliable protocol build on UDP, to tunnel multiple tcp connections with a small discovery server to handle connecting clients. <a href="https://github.com/jtjj222/remote-support">Source</a></p>
+                </div>
             </div>
             <div>
-                <img src="img/nat1.png" />
-                <h3>Remote Support</h3>
-                <p>While at the YMCA, I developed a open-source remote support tool for John Island Camp using Java and UDP hole-punching. I needed quick and simple ssh access through a NAT, without port forwarding. It used Netty and utp to tunnel multiple tcp connections over the network, and a small discovery server to handle connecting clients. It used less bandwidth and was easier to set up than off the shelf solutions. <a href="https://github.com/jtjj222/remote-support">Source</a></p>
+                <div class="left"><img src="img/transit1.png" /></div>
+                <div class="text">
+                    <h3>Sudbury Transit</h3>
+                    <p>A small, Open Source Android transit application using the Sudbury Open Data API, available on F-Droid. It allowed me to contribute to Open Source and my community, and to gain familiarity with the OpenStreetMap api. <a href="https://github.com/jtjj222/Sudbury-Transit">Source</a></p>
+                </div>
             </div>
             <div>
-                <img src="img/transit1.png" />
-                <h3>Sudbury Transit</h3>
-                <p>A small, Open Source Android transit application using the Sudbury Open Data API, available on F-Droid. It
-allowed me to contribute to Open Source and my community. <a href="https://github.com/jtjj222/Sudbury-Transit">Source</a></p>
+                <div class="left"><img src="img/game1.png" /></div>
+                <div class="text">
+                    <h3>Game Design Unit</h3>
+                    <p>In High School, I worked to create a video game design unit for my computer science class, using Java and libgdx. Pictured is an example platforming game that covered basic 2d physics that "feels" right, and the loading of Tiled levels. <a href="https://github.com/jtjj222/Libgdx-demos">Source</a></p>
+                </div>
             </div>
             <div>
-                <img src="img/game1.png" />
-                <h3>Game Design Unit</h3>
-                <p>In High School, I worked to create a video game design unit for my computer science class, using Java and libgdx <a href="https://github.com/jtjj222/Libgdx-demos">Source</a></p>
-            </div>
-            <div>
-                <img src="img/raytrace.png" />
-                <h3>Raytracer</h3>
-                <p>A small raytracer, implemented in pure c++ with no libraries. <a href="https://github.com/jtjj222/raytracer">Source</a></p>
+                <div class="left"><img src="img/raytrace.png" /></div>
+                <div class="text">
+                    <h3>Raytracer</h3>
+                    <p>A small raytracer, implemented in pure c++ with no libraries. Reflection, simple global illumination and basic shadows were implemented. <a href="https://github.com/jtjj222/raytracer">Source</a></p>
+                </div>
             </div>
         </div>
 
