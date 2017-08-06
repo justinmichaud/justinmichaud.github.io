@@ -170,7 +170,6 @@ div a {
 .medium-title {
     color: rgba(0, 0, 0, 0.9);
     display: block;
-    height: 20px;
     overflow-wrap: break-word;
     text-decoration: none solid rgba(0, 0, 0, 0.9);
     text-rendering: optimizeLegibility;
@@ -186,18 +185,12 @@ div a {
     font: normal normal normal normal 16px / 20.8px medium-ui-sans-serif-text-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     margin: 0px 0px -8px;
     outline: rgba(0, 0, 0, 0.9) none 0px;
-}
-
-@media (max-width: 700px) {
-    .medium-title {
-        margin: 0px 0px 2px;
-    }
+    position: static;
 }
 
 .medium-subtitle {
     color: rgba(0, 0, 0, 0.6);
     display: block;
-    height: 19px;
     max-height: 120px;
     overflow-wrap: break-word;
     text-decoration: none solid rgba(0, 0, 0, 0.6);
