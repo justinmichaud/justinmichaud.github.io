@@ -112,3 +112,133 @@ div a {
         padding-top: 0;
     }
 }
+
+.blog {
+    margin: 0 auto;
+}
+
+.medium-post {
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 1px 4px 0px, rgba(0, 0, 0, 0.09) 0px 0px 0px 1px inset;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.44);
+    background: #FFF;
+    display: table;
+    height: 160px;
+    left: 0px;
+    max-height: 280px;
+    overflow-wrap: break-word;
+    text-decoration: none solid rgba(0, 0, 0, 0.44);
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    max-width: 700px;
+    word-break: break-word;
+    word-wrap: break-word;
+    column-rule-color: rgba(0, 0, 0, 0.44);
+    perspective-origin: 350px 80px;
+    transform-origin: 350px 80px;
+    caret-color: rgba(0, 0, 0, 0.44);
+    border: 0px none rgba(0, 0, 0, 0.44);
+    font: normal normal normal normal 12px / 16.8px medium-ui-sans-serif-text-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 43px auto;
+    outline: rgba(0, 0, 0, 0.44) none 0px;
+    overflow: hidden;
+}
+
+.medium-link {
+    color: rgba(0, 0, 0, 0.44);
+    display: table-cell;
+    height: 120px;
+    overflow-wrap: break-word;
+    text-decoration: none solid rgba(0, 0, 0, 0.44);
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    vertical-align: middle;
+    max-width: 500px;
+    word-break: break-word;
+    word-wrap: break-word;
+    column-rule-color: rgba(0, 0, 0, 0.44);
+    perspective-origin: 270px 80px;
+    transform-origin: 270px 80px;
+    caret-color: rgba(0, 0, 0, 0.44);
+    background: rgba(255, 255, 255, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgba(0, 0, 0, 0.44);
+    font: normal normal normal normal 12px / 16.8px medium-ui-sans-serif-text-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    outline: rgba(0, 0, 0, 0.44) none 0px;
+    padding: 20px;
+}
+
+.medium-title {
+    color: rgba(0, 0, 0, 0.9);
+    display: block;
+    height: 20px;
+    overflow-wrap: break-word;
+    text-decoration: none solid rgba(0, 0, 0, 0.9);
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    max-width: 500px;
+    word-break: break-word;
+    word-wrap: break-word;
+    column-rule-color: rgba(0, 0, 0, 0.9);
+    perspective-origin: 250px 10px;
+    transform-origin: 250px 10px;
+    caret-color: rgba(0, 0, 0, 0.9);
+    border: 0px none rgba(0, 0, 0, 0.9);
+    font: normal normal normal normal 16px / 20.8px medium-ui-sans-serif-text-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0px 0px -8px;
+    outline: rgba(0, 0, 0, 0.9) none 0px;
+}
+
+@media (max-width: 700px) {
+    .medium-title {
+        margin: 0px 0px 2px;
+    }
+}
+
+.medium-subtitle {
+    color: rgba(0, 0, 0, 0.6);
+    display: block;
+    height: 19px;
+    max-height: 120px;
+    overflow-wrap: break-word;
+    text-decoration: none solid rgba(0, 0, 0, 0.6);
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    max-width: 500px;
+    word-break: break-word;
+    word-wrap: break-word;
+    column-rule-color: rgba(0, 0, 0, 0.6);
+    perspective-origin: 250px 9.5px;
+    transform-origin: 250px 9.5px;
+    caret-color: rgba(0, 0, 0, 0.6);
+    border: 0px none rgba(0, 0, 0, 0.6);
+    font: normal normal normal normal 14px / 19.6px medium-ui-sans-serif-text-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: -1px 0px 10px;
+    outline: rgba(0, 0, 0, 0.6) none 0px;
+    overflow: hidden;
+}
+
+.medium-image {
+    background-position: 50% 50%;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 0px 0px 1px inset;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.44);
+    display: table-cell;
+    height: 160px;
+    overflow-wrap: break-word;
+    text-decoration: none solid rgba(0, 0, 0, 0.44);
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    vertical-align: middle;
+    width: 160px;
+    word-break: break-word;
+    word-wrap: break-word;
+    column-rule-color: rgba(0, 0, 0, 0.44);
+    perspective-origin: 80px 80px;
+    transform-origin: 80px 80px;
+    caret-color: rgba(0, 0, 0, 0.44);
+    border: 0px none rgba(0, 0, 0, 0.44);
+    font: normal normal normal normal 12px / 16.8px medium-ui-sans-serif-text-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    outline: rgba(0, 0, 0, 0.44) none 0px;
+}
+
+
