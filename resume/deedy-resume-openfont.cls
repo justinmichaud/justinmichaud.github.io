@@ -23,7 +23,6 @@
 \definecolor{headings}{HTML}{6A6A6A}
 \definecolor{subheadings}{HTML}{333333}
 \definecolor{splash}{HTML}{37862A}
-\definecolor{splash-bg}{HTML}{1a630f}
 
 % Set main fonts
 \usepackage{fontspec}
