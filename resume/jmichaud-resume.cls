@@ -12,8 +12,9 @@
 \definecolor{splash}{HTML}{37862A}
 
 % Package Imports
-\usepackage[hmargin=1in, vmargin=1in]{geometry}
+\usepackage[hmargin=0.5in, vmargin=0.5in]{geometry}
 \usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
 \AtBeginDocument{
 	\hypersetup{
 		colorlinks=false,
@@ -67,6 +68,9 @@
 \color{headings}\raggedright\fontspec[Path = fonts/]{SourceSansPro-Semibold}\fontsize{11pt}{12pt}\selectfont {#1} \normalfont}
 
 % Bullet Lists with fewer gaps command
-\newenvironment{tightemize}{\fontsize{10.5pt}{12pt}\selectfont
-\vspace{-\topsep}\begin{itemize}\itemsep2pt \parskip0pt \parsep0pt}
-{\end{itemize}\vspace{-\topsep}}
+\newenvironment{tightemize}{
+	\fontsize{10.5pt}{12pt}\selectfont
+	\vspace{-\topsep}
+	\begin{itemize}
+		\itemsep2pt \parskip0pt \parsep0pt}
+	{\end{itemize}\vspace{-\topsep}}
