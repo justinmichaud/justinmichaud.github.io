@@ -70,7 +70,7 @@
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{
-	\fontsize{10.5pt}{12pt}\selectfont
+	\fontsize{10.5pt}{14pt}\selectfont
 	\vspace{-\topsep}
 	\begin{itemize}
 		\itemsep2pt \parskip0pt \parsep0pt}
