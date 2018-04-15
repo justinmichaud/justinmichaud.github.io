@@ -15,36 +15,37 @@
 
 \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}l@{\hspace{8em}}}
 	\location{Know:} & Java, Scala, Rust, C++, Android, MySQL, Kafka\\
-	\location{Have used:} & OpenGL, Python, Ruby, Galera, Arduino, Javascript/ES6, EmberJS, ElasticSearch, Elixir\\
+	\location{Have used:} & OpenGL, Python, Ruby, Percona XtraDB, Arduino, Javascript/ES6, EmberJS, ElasticSearch, Elixir\\
 \end{tabular*}
 
 \section{Experience}
-\runsubsection{PagerDuty,}\descript{Software Engineering Intern} \hfill \location{Jan 2018 – April 2018 | San Francisco, CA}
+\runsubsection{PagerDuty,}\descript{Software Engineering Intern} \hfill \location{Kafka, Scala, Akka | Jan 2018 – April 2018 | San Francisco, CA}
 \begin{tightemize}
-	\item Developed pipeline to transactionally publish records to Kafka from our monolith, using open source tool Maxwell to publish Mysql binlog updates to Kafka
-	\item Built service using Scala/Akka Streams to enable filtering and publishing of Maxwell messages to multiple Kafka clusters; Submitted PRs to Maxwell to enable safe recovery for various failure cases
-	\item Added OAuth support to backend for frontend service written with Scala and Akka Http
+	\item Developed service to transactionally publish records to Kafka from Mysql; Enabled teams to easily move services outside monolith without compromising consistency
+	\item Submitted bugfixes and recovery feature to open-source Maxwell Mysql binlog update publisher
+	\item Built service using Scala/Akka Streams to enable filtering, publishing of Maxwell messages to multiple Kafka clusters
+	\item Added OAuth support to backend for frontend service written with Scala and Akka Http, used by new services to avoid dependency on monolith
 	
 \end{tightemize}
-\hfill \location{May 2017 – Aug 2017 | Toronto, ON}
+\hfill \location{Ruby, Mysql, EmberJS | May 2017 – Aug 2017 | Toronto, ON}
 \begin{tightemize}
-	\item Optimized Mysql queries, added indexes and denormalized columns allowing dashboard to support accounts with millions of incidents
+	\item Optimized Mysql queries, added indexes and denormalized columns allowing incidents dashboard to support millions of incidents
 	\item Polished incident priority feature using ruby, EmberJS and iOS/Android SDKs
 \end{tightemize}
 \sectionsep
 
 \runsubsection{YMCA,}\descript{I.T. Assistant} \hfill \location{Jun 2014 – Aug 2016 | Sudbury, ON}
 \begin{tightemize}
-	\item Built low-bandwidth remote support tool that used UDP hole-punching to tunnel TCP connections without port forwarding
+	\item Built low-bandwidth remote support tool using UDP hole-punching to tunnel TCP connections without port forwarding
 \end{tightemize}
 \sectionsep
 
 \runsection{Selected Projects} \hfill \location{More at \href{http://justinmichaud.com}{justinmichaud.com}}
 
-\begin{minipage}[t]{0.495\textwidth} 
+\sectionsepp
 
-\runsubsection{AnySoftKeyboard} \hfill
-\location{Java, C++ | Contributor}
+\runsubsection{AnySoftKeyboard (Open Source Contributor)} \hfill
+\location{Java, C++, Android}
 \begin{tightemize}
 	\item Contributed gesture typing feature to create first open source swipe keyboard for Android
 	\item Compares input paths to simulated paths to find most likely word
@@ -52,71 +53,66 @@
 
 \sectionsep
 
-\end{minipage} 
-\hfill
-\begin{minipage}[t]{0.49\textwidth}
-
 \runsubsection{Rust Nes Emulator} \hfill
 \location{Rust, 6502 ASM}
 \begin{tightemize}
-	\item Created NES emulator capable of playing Super Mario Bros, Donkey Kong
-	\item Included game modifications for Super Mario Bros. not possible on original hardware
+	\item Created NES emulator capable of playing Super Mario Bros., Donkey Kong
+	\item Included game modifications not possible on original hardware, import/export support for Super Mario Bros. levels
 \end{tightemize}
 
 \sectionsep
 
-\end{minipage} 
-\hfill
-\begin{minipage}[t]{0.49\textwidth}
-
-\runsubsection{GlideN64} \hfill
-\location{C++, OpenGL | Contributor}
+\runsubsection{GlideN64 (Open Source Contributor)} \hfill
+\location{C++, OpenGL}
 \begin{tightemize}
-	\item Contributed stereoscopic rendering support to GlideN64 Nintendo 64 emulator
-	\item After projection matrix is applied, "untransforms" vertices to apply eye translation, avoiding toe-in artifacts 
+	\item Contributed side-by-side stereoscopic rendering support to GlideN64 Nintendo 64 emulator
+	\item After projection matrix is applied, "untransforms" vertices to apply eye translation, avoiding toe-in artifacts
 \end{tightemize}
 \sectionsep
 
-\end{minipage} 
-\hfill
-\begin{minipage}[t]{0.49\textwidth}
-
-\runsubsection{VR Space Shooter} \hfill
-\location{Java, OpenGL}
+\runsubsection{DIY Head Tracking Cardboard VR Space Shooter } \hfill
+\location{Java, OpenGL, BoofCV}
 \begin{tightemize}
-	\item Cardboard shooter game using head tracking to allow player to shoot enemies and dodge obstacles
-	\item Used OpenGL for rendering, BoofCV on a laptop to track the position of player’s head
+	\item Google Cardboard shooter game using head tracking to allow player to shoot enemies and dodge obstacles
+	\item Uses OpenGL for rendering, BoofCV on a laptop to track the position of player’s head with printed fiducial
+\end{tightemize}
+
+\sectionsep
+	
+\runsubsection{Rust/Servo Gui Framework Demo} \hfill
+\location{Rust}
+\begin{tightemize}
+	\item Fork of servo browser engine supporting a simple react-like rust html macro and native rust event handlers
+	\item Like electron, but using native rust + servo instead of javascript + webkit. 
 \end{tightemize}
 \sectionsep
+	
+\runsubsection{Other} \hfill
+\location{Scala, Rust, C}
+
+\begin{minipage}[t]{0.49\textwidth}
+\begin{tightemize}
+	\item\href{https://github.com/justinmichaud/scala-monad-worksheets/}{What is a monad? (Tech Talk + Scala Worksheets)}
+\end{tightemize}
+
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.49\textwidth}
-	
-	\runsubsection{Ion Gui Framework Demo} \hfill
-	\location{Rust}
-	\begin{tightemize}
-		\item Fork of servo browser engine supporting a simple react-like rust html macro and native rust event handlers; \item Like electron, but using native rust + servo instead of javascript + webkit. 
-	\end{tightemize}
-	\sectionsep
-	
-\end{minipage} 
-\hfill
-\begin{minipage}[t]{0.49\textwidth}
-	
-	\runsubsection{Other} \hfill
-	\location{Scala, Rust, C??}
-	\begin{tightemize}
-		\item\href{https://medium.com/@justin_michaud/super-mario-bros-level-generation-using-torch-rnn-726ddea7e9b7}{Torn-RNN Super Mario Bros Level Generation (Blog)}
-		\item\href{https://github.com/justinmichaud/scala-monad-worksheets/}{What is a monad? (Talk + Scala Worksheets)}
-		\item\href{NOWHERE}{Pagerduty Doom Mod - deadliest incident response??}
-	\end{tightemize}
-	\sectionsep
+\begin{tightemize}
+	\item\href{https://medium.com/@justin_michaud/super-mario-bros-level-generation-using-torch-rnn-726ddea7e9b7}{Torn-RNN Super Mario Bros Level Generation (Blog post)}
+\end{tightemize}
 \end{minipage}
+
+\begin{tightemize}
+	\item\href{https://github.com/justinmichaud/chocolate-doom}{Pagerduty Doom Mod - Deadliest Incident Management Solution (view and resolve incidents as enemies in-game)}
+\end{tightemize}
+
+\sectionsep
 
 \section{Education} 
 \runsubsection{University of Waterloo}, \descript{2A Computer Science} \hfill \location{Sept 2016 - Present | Waterloo, ON}
 
 \section{Interests}
-Oboe with Orchestra@UWaterloo and UW concert band club, playing games on my Commodore 64\\
+Oboe with Orchestra@UWaterloo and UW concert band club, playing games on my Commodore 64, collecting old Macs\\
 
 \end{document}  \documentclass[]{article}

@@ -43,7 +43,8 @@
 \usepackage{titlesec}
 \titlespacing{\section}{0pt}{0pt}{0pt} 
 \titlespacing{\subsection}{0pt}{0pt}{0pt}
-\newcommand{\sectionsep}{\vspace{13pt}}
+\newcommand{\sectionsep}{\vspace{10pt}}
+\newcommand{\sectionsepp}{\vspace{5pt}}
 
 % Headings command
 \titleformat{\section}{\color{splash}
