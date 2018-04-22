@@ -12,7 +12,7 @@
 \definecolor{splash}{HTML}{37862A}
 
 % Package Imports
-\usepackage[hmargin=0.5in, vmargin=0.5in]{geometry}
+\usepackage[letterpaper, hmargin=0.5in, vmargin=0.5in]{geometry}
 \usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
 \AtBeginDocument{
@@ -70,8 +70,8 @@
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{
-	\fontsize{10.5pt}{14pt}\selectfont
+	\fontsize{12.2pt}{14pt}\selectfont
 	\vspace{-\topsep}
 	\begin{itemize}
-		\itemsep2pt \parskip0pt \parsep0pt}
+		\itemsep3pt \parskip0pt \parsep0pt}
 	{\end{itemize}\vspace{-\topsep}}

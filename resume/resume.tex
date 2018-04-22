@@ -11,7 +11,7 @@
 \namesection{Justin}{Michaud}{ \urlstyle{same} \href{mailto:hello@justinmichaud.com}{hello@justinmichaud.com} | \href{http://justinmichaud.com}{justinmichaud.com} | \href{https://github.com/justinmichaud}{github.com/justinmichaud}
 }
 
-\section{Skills}
+\section{About}
 
 \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}l@{\hspace{8em}}}
 	\location{Know:} & Java, Scala, Rust, C++, MySQL, Kafka, Android\\
@@ -21,16 +21,15 @@
 \section{Experience}
 \runsubsection{PagerDuty,}\descript{Software Engineering Intern} \hfill \location{Kafka, Scala, Akka | Jan 2018 – April 2018 | San Francisco, CA}
 \begin{tightemize}
-	\item Developed service to transactionally publish records to Kafka from Mysql, enabling teams to make microservices outside monolith using existing transactions
-	\item Submitted bugfixes and binlog skipping feature to open-source Maxwell Mysql binlog update publisher
-	\item Built service using Scala/Akka Streams to enable filtering, publishing of Maxwell messages to multiple Kafka clusters
-	\item Added OAuth support to backend for frontend service written with Scala and Akka Http, used by new services to avoid dependency on monolith
+	\item Developed replacement for service that published records to Kafka from Mysql, eliminating database locking and load
+	\item Contributed recovery features/bugfixes to open source Maxwell Mysql binlog-to-json publisher, built Scala/Akka Streams service to allow filtering and fanout of messages to multiple clusters
+	\item Added OAuth support and other improvements to new Scala/Akka backend for frontend service
 	
 \end{tightemize}
 \sectionsep
 \runsubsection{PagerDuty,}\descript{Software Engineering Intern}\hfill \location{Ruby, Mysql, EmberJS | May 2017 – Aug 2017 | Toronto, ON}
 \begin{tightemize}
-	\item Optimized Mysql queries, added indexes and denormalized columns allowing incidents dashboard to support millions of incidents without any downtime
+	\item Optimized Mysql queries, added indexes and denormalized columns allowing incidents dashboard to support millions of incidents, without any maintenance downtime
 	\item Implemented incident priority editing and mobile support using ruby, EmberJS and iOS/Android SDKs
 \end{tightemize}
 \sectionsep
@@ -46,10 +45,10 @@
 \sectionsepp
 
 \runsubsection{AnySoftKeyboard Contributor} \hfill
-\location{Java, C++, Android}
+\location{Java, C++, Android, JNI}
 \begin{tightemize}
 	\item Contributed gesture typing feature to create first open source swipe keyboard for Android
-	\item Compares input paths to simulated paths to find most likely word
+	\item Compares input path to simulated paths, measuring distance along path to find most likely word
 \end{tightemize}
 
 \sectionsep
@@ -62,24 +61,27 @@
 \end{tightemize}
 
 \sectionsep
-
+\iffalse
 \runsubsection{GlideN64 Contributor} \hfill
 \location{C++, OpenGL}
 \begin{tightemize}
-	\item Contributed side-by-side stereoscopic rendering support to GlideN64 Nintendo 64 emulator
+	\item Contributed stereoscopic rendering support to GlideN64 Nintendo 64 graphics plugin
 	\item After projection matrix is applied, "untransforms" vertices to apply eye translation, avoiding toe-in artifacts
 \end{tightemize}
 \sectionsep
+\fi
 
-\runsubsection{Head Tracking Space Shooter} \hfill
+\iftrue
+\runsubsection{VR Space Shooter} \hfill
 \location{Java, OpenGL, BoofCV}
 \begin{tightemize}
 	\item Google Cardboard shooter game using head tracking to allow player to shoot enemies and dodge obstacles
-	\item Uses OpenGL for rendering, BoofCV on a laptop to track the position of player’s head with printed fiducial
+	\item Uses OpenGL for rendering, BoofCV on a laptop to track the position of player’s head
 \end{tightemize}
-
 \sectionsep
-\iffalse
+\fi
+
+\iftrue
 \runsubsection{Rust/Servo Gui Framework Demo} \hfill
 \location{Rust}
 \begin{tightemize}
@@ -88,7 +90,8 @@
 \end{tightemize}
 \sectionsep
 \fi
-	
+
+\iffalse
 \runsubsection{Other} \hfill
 \location{Scala, Rust, C}
 
@@ -108,13 +111,13 @@
 \begin{tightemize}
 	\item\href{https://github.com/justinmichaud/chocolate-doom}{Pagerduty Doom Mod - Deadliest Incident Management Solution (view and resolve incidents as enemies in-game)}
 \end{tightemize}
-
 \sectionsep
+\fi
 
 \section{Education} 
 \runsubsection{University of Waterloo}, \descript{2B Computer Science} \hfill \location{Sept 2016 - Present | Waterloo, ON}
 
 \section{Interests}
-Oboe with Orchestra@UWaterloo and UW concert band club, playing games on my Commodore 64, collecting old Macs\\
+I love playing oboe with Orchestra@UWaterloo, playing games on my Commodore 64, and collecting old Macs \\
 
 \end{document}  \documentclass[]{article}
