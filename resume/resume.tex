@@ -8,18 +8,77 @@
 %\usepackage{showframe}
  
 \begin{document}
-\namesection{Justin}{Michaud}{ \urlstyle{same} \href{mailto:hello@justinmichaud.com}{hello@justinmichaud.com} | \href{http://justinmichaud.com}{justinmichaud.com} | \href{https://github.com/justinmichaud}{github.com/justinmichaud}
+	
+\begin{minipage}[t]{0.3\textwidth}
+\vspace{10pt}
+\namesection{Justin\vspace{5pt}}{Michaud}{
+\href{mailto:hello@justinmichaud.com}{hello@justinmichaud.com}
+
+\vspace{5pt}
+
+\href{http://justinmichaud.com}{ justinmichaud.com}
+
+\vspace{5pt}
+
+\href{https://github.com/justinmichaud}{github.com/justinmichaud}
 }
 
-\section{About}
+\vspace{21pt}
 
-\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}l@{\hspace{8em}}}
-	\location{Know:} & Java, Scala, Rust, C++, MySQL, Kafka, Android\\
-	\location{Have used:} & OpenGL, Python, Ruby, Percona XtraDB, Arduino, Javascript/ES6, EmberJS, ElasticSearch, Elixir\\
-\end{tabular*}
+\section{Technologies}
+\vspace{7pt}
+\begin{tightemize}
+	\item Java
+	\item Scala
+	\item Rust
+	\item C++
+	\item MySQL
+	\item Kafka
+	\item Android
+	\item OpenGL
+\end{tightemize}
 
+\vspace{15pt}
+
+\section{Interests}
+\vspace{7pt}
+\begin{tightemize}
+	\item Free \& Open Source Software
+	\item Distributed Systems
+	\item Graphics
+	\item Emulation
+	\item Databases
+	\item Rust
+\end{tightemize}
+
+\vspace{20pt}
+
+\section{Hobbies}
+\vspace{7pt}
+\begin{tightemize}
+	\item Oboe with UWaterloo Orchestra
+	\item Playing with my Commodore 64
+	\item Biking and Unicycling (barely)
+	\item Collecting old Macs
+\end{tightemize}
+
+\vspace{20pt}
+
+\section{Education} 
+\runsubsection{University of Waterloo}
+
+\descript{2B Computer Science}
+
+\location{Sept 2016 - Present, Waterloo, ON}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.65\textwidth}
 \section{Experience}
-\runsubsection{PagerDuty,}\descript{Software Engineering Intern} \hfill \location{Kafka, Scala, Akka | Jan 2018 – April 2018 | San Francisco, CA}
+\runsubsection{PagerDuty,}\descript{Software Engineering Intern} \hfill \location{San Francisco, CA}
+
+\location{Kafka, Scala, Akka | Jan 2018 – April 2018}
+\vspace{7pt}
 \begin{tightemize}
 	\item Developed replacement for service that published records to Kafka from Mysql, eliminating database locking and load
 	\item Contributed recovery features/bugfixes to open source Maxwell Mysql binlog-to-json publisher, built Scala/Akka Streams service to allow filtering and fanout of messages to multiple clusters
@@ -27,14 +86,16 @@
 	
 \end{tightemize}
 \sectionsep
-\runsubsection{PagerDuty,}\descript{Software Engineering Intern}\hfill \location{Ruby, Mysql, EmberJS | May 2017 – Aug 2017 | Toronto, ON}
+\runsubsection{PagerDuty,}\descript{Software Engineering Intern}\hfill \location{Toronto, ON}
+
+\location{Ruby, Mysql, EmberJS | May 2017 – Aug 2017}
 \begin{tightemize}
 	\item Optimized Mysql queries, added indexes and denormalized columns allowing incidents dashboard to support millions of incidents, without any maintenance downtime
 	\item Implemented incident priority editing and mobile support using ruby, EmberJS and iOS/Android SDKs
 \end{tightemize}
 \sectionsep
 
-\runsubsection{YMCA,}\descript{Software Development Assistant} \hfill \location{Php, Java | Jun 2014 – Aug 2016 | Sudbury, ON}
+\runsubsection{YMCA,}\descript{Software Development Assistant} \hfill \location{ Jun 2014 – Aug 2016 | Sudbury, ON}
 \begin{tightemize}
 	\item Built low-bandwidth remote support tool using UDP hole-punching to tunnel TCP connections without port forwarding
 \end{tightemize}
@@ -42,7 +103,7 @@
 
 \runsection{Selected Projects} \hfill \location{More at \href{http://justinmichaud.com}{justinmichaud.com}}
 
-\sectionsepp
+\sectionsep
 
 \runsubsection{AnySoftKeyboard Contributor} \hfill
 \location{Java, C++, Android, JNI}
@@ -56,16 +117,16 @@
 \runsubsection{Rust Nes Emulator} \hfill
 \location{Rust, 6502 ASM}
 \begin{tightemize}
-	\item Created NES emulator capable of playing Super Mario Bros., Donkey Kong
-	\item Included game modifications not possible on original hardware, import/export support for Super Mario Bros. levels
+	\item Created NES emulator capable of playing Super Mario Bros. and Donkey Kong; Passes NESTest test rom
+	\item Included game modifications not possible on original hardware by hooking into memory reads/writes and import/export support for Super Mario Bros. levels
 \end{tightemize}
 
 \sectionsep
-\iffalse
-\runsubsection{GlideN64 Contributor} \hfill
+\iftrue
+\runsubsection{GlideN64} \hfill
 \location{C++, OpenGL}
 \begin{tightemize}
-	\item Contributed stereoscopic rendering support to GlideN64 Nintendo 64 graphics plugin
+	\item Created patch adding stereo rendering and google cardboard support to GlideN64 Nintendo 64 graphics plugin
 	\item After projection matrix is applied, "untransforms" vertices to apply eye translation, avoiding toe-in artifacts
 \end{tightemize}
 \sectionsep
@@ -81,7 +142,7 @@
 \sectionsep
 \fi
 
-\iftrue
+\iffalse
 \runsubsection{Rust/Servo Gui Framework Demo} \hfill
 \location{Rust}
 \begin{tightemize}
@@ -91,33 +152,6 @@
 \sectionsep
 \fi
 
-\iffalse
-\runsubsection{Other} \hfill
-\location{Scala, Rust, C}
-
-\begin{minipage}[t]{0.49\textwidth}
-\begin{tightemize}
-	\item\href{https://github.com/justinmichaud/scala-monad-worksheets/}{What is a monad? (Tech Talk + Scala Worksheets)}
-\end{tightemize}
-
 \end{minipage}
-\hfill
-\begin{minipage}[t]{0.49\textwidth}
-\begin{tightemize}
-	\item\href{https://medium.com/@justin_michaud/super-mario-bros-level-generation-using-torch-rnn-726ddea7e9b7}{Torn-RNN Super Mario Bros Level Generation (Blog post)}
-\end{tightemize}
-\end{minipage}
-
-\begin{tightemize}
-	\item\href{https://github.com/justinmichaud/chocolate-doom}{Pagerduty Doom Mod - Deadliest Incident Management Solution (view and resolve incidents as enemies in-game)}
-\end{tightemize}
-\sectionsep
-\fi
-
-\section{Education} 
-\runsubsection{University of Waterloo}, \descript{2B Computer Science} \hfill \location{Sept 2016 - Present | Waterloo, ON}
-
-\section{Interests}
-I love playing oboe with Orchestra@UWaterloo, playing games on my Commodore 64, and collecting old Macs \\
 
 \end{document}  \documentclass[]{article}

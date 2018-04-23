@@ -12,7 +12,7 @@
 \definecolor{splash}{HTML}{37862A}
 
 % Package Imports
-\usepackage[letterpaper, hmargin=0.5in, vmargin=0.5in]{geometry}
+\usepackage[letterpaper, left=0.2in, right=0.5in, vmargin=0.5in]{geometry}
 \usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
 \AtBeginDocument{
@@ -29,12 +29,12 @@
 
 % Name command
 \newcommand{\namesection}[3]{
-\centering{
+{
 \fontsize{40pt}{60pt}
 \fontspec[Path = fonts/]{SourceSansPro-Light}\selectfont\color{splash} #1 
 \fontspec[Path = fonts/]{SourceSansPro-Light}\selectfont #2
 } \\[5pt]
-\centering{
+{
 \color{headings}
 \fontspec[Path = fonts/]{SourceSansPro-Regular}\fontsize{11pt}{14pt}\selectfont #3}
 }
@@ -72,6 +72,6 @@
 \newenvironment{tightemize}{
 	\fontsize{12.2pt}{14pt}\selectfont
 	\vspace{-\topsep}
-	\begin{itemize}
+	\begin{itemize}[leftmargin=10pt]
 		\itemsep3pt \parskip0pt \parsep0pt}
 	{\end{itemize}\vspace{-\topsep}}
