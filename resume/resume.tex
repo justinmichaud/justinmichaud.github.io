@@ -80,8 +80,8 @@
 \location{Kafka, Scala, Akka | Jan 2018 – April 2018}
 \vspace{7pt}
 \begin{tightemize}
-	\item Developed replacement for service that published records to Kafka from Mysql, eliminating database locking and load
-	\item Contributed recovery features/bugfixes to open source Maxwell Mysql binlog-to-json publisher, built Scala/Akka Streams service to allow filtering and fanout of messages to multiple clusters
+	\item Dramatically reduced database locking and load by developed replacement for service that published records to Kafka from Mysql
+	\item Contributed recovery features/bugfixes to open source Maxwell MySQL binlog-to-json publisher, built Scala/Akka Streams service to allow filtering and fanout of messages to multiple clusters
 	\item Added OAuth support and other improvements to new Scala/Akka backend for frontend service
 	
 \end{tightemize}
@@ -90,12 +90,14 @@
 
 \location{Ruby, Mysql, EmberJS | May 2017 – Aug 2017}
 \begin{tightemize}
-	\item Optimized Mysql queries, added indexes and denormalized columns allowing incidents dashboard to support millions of incidents, without any maintenance downtime
+	\item Optimized MySQL queries, added indexes and denormalized columns allowing incidents dashboard to support millions of incidents, without any maintenance downtime
 	\item Implemented incident priority editing and mobile support using ruby, EmberJS and iOS/Android SDKs
 \end{tightemize}
 \sectionsep
 
-\runsubsection{YMCA,}\descript{Software Development Assistant} \hfill \location{ Jun 2014 – Aug 2016 | Sudbury, ON}
+\runsubsection{YMCA,}\descript{Software Development Assistant} \hfill \location{Sudbury, ON}
+
+\location{Java, PHP | Jun 2014 – Aug 2016}
 \begin{tightemize}
 	\item Built low-bandwidth remote support tool using UDP hole-punching to tunnel TCP connections without port forwarding
 \end{tightemize}
@@ -117,7 +119,7 @@
 \runsubsection{Rust Nes Emulator} \hfill
 \location{Rust, 6502 ASM}
 \begin{tightemize}
-	\item Created NES emulator capable of playing Super Mario Bros. and Donkey Kong; Passes NESTest test rom
+	\item Created NES emulator capable of playing Super Mario Bros. and Donkey Kong to learn rust; Passes NESTest test rom
 	\item Included game modifications not possible on original hardware by hooking into memory reads/writes and import/export support for Super Mario Bros. levels
 \end{tightemize}
 
@@ -127,7 +129,7 @@
 \location{C++, OpenGL}
 \begin{tightemize}
 	\item Created patch adding stereo rendering and google cardboard support to GlideN64 Nintendo 64 graphics plugin
-	\item After projection matrix is applied, "untransforms" vertices to apply eye translation, avoiding toe-in artifacts
+	\item After projection matrix is applied but before perspective divide it applies eye translation, avoiding toe-in artifacts
 \end{tightemize}
 \sectionsep
 \fi
