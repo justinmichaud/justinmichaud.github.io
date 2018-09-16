@@ -29,13 +29,10 @@
 \section{Technologies}
 \vspace{7pt}
 \begin{tightemize}
+	\item C++
 	\item Java
 	\item Scala
 	\item Rust
-	\item C++
-	\item MySQL
-	\item Kafka
-	\item Android
 	\item OpenGL
 \end{tightemize}
 
@@ -45,10 +42,9 @@
 \vspace{7pt}
 \begin{tightemize}
 	\item Free \& Open Source Software
-	\item Distributed Systems
+	\item Browsers
 	\item Graphics
 	\item Emulation
-	\item Databases
 	\item Rust
 \end{tightemize}
 
@@ -58,9 +54,7 @@
 \vspace{7pt}
 \begin{tightemize}
 	\item Oboe with UW Orchestra
-	\item Playing Commodore 64
-	\item Biking and Unicycling (barely)
-	\item Collecting old Macs
+	\item Collecting old computers (Mac classic, Commodore 64)
 \end{tightemize}
 
 \vspace{20pt}
@@ -78,16 +72,24 @@
 \hfill
 \begin{minipage}[t]{0.64\textwidth}
 \section{Experience}
-\runsubsection{PagerDuty,}\descript{Software Engineering Intern} \hfill \location{Jan 2018 – April 2018}
+\runsubsection{Apple,}\descript{WebKit Layout \& Rendering Intern} \hfill \location{Sep 2018 – Dec 2018}
 
-\location{Kafka, Scala, Akka | San Francisco, CA}
+\location{C++ | Cupertino, CA}
 \vspace{10pt}
 
 \begin{tightemize}
-	\item Dramatically reduced database locking and load by developing replacement for service that published records to Kafka from MySQL
-	\item Contributed recovery features and bugfixes to open source Maxwell MySQL binlog-to-json publisher
-	\item Built Scala/Akka Streams service to allow filtering and fanout of messages to multiple clusters
-	\item Added OAuth support and other improvements to new Scala backend for frontend service
+	\item In Progress
+	
+\end{tightemize}
+\sectionsep
+\runsubsection{PagerDuty,}\descript{Software Engineering Intern} \hfill \location{Jan 2018 – April 2018}
+
+\location{Kafka, Scala, Akka | San Francisco, CA}
+
+\begin{tightemize}
+	\item Reduced database load by developing replacement for service that published records to Kafka from MySQL
+	\item Built Scala/Akka Streams service to allow filtering and fanout of kafka records to multiple clusters
+	\item Went on-call for team's mission-critical services
 	
 \end{tightemize}
 \sectionsep
@@ -112,7 +114,7 @@
 \end{tightemize}
 \sectionsep
 
-\runsection{Selected Projects} \hfill \location{More at \href{http://justinmichaud.com}{justinmichaud.com}}
+\runsection{Projects} \hfill \location{More at \href{http://justinmichaud.com}{justinmichaud.com}}
 
 \sectionsep
 
@@ -120,7 +122,7 @@
 \location{Java, C++, Android, JNI}
 \begin{tightemize}
 	\item Contributed gesture typing feature to create first open source swipe keyboard for Android
-	\item Compares input path to simulated paths, measuring distance along path to find most likely word
+	\item Compares input path to simulated paths, measuring distance along path to find most likely word; Next steps are to improve accuracy, usability and performance
 \end{tightemize}
 
 \sectionsep
@@ -128,36 +130,26 @@
 \runsubsection{Rust Nes Emulator} \hfill
 \location{Rust, 6502 ASM}
 \begin{tightemize}
-	\item Created NES emulator capable of playing Super Mario Bros. and Donkey Kong to learn rust; Passes NESTest test rom
+	\item Created NES emulator with partial audio and cartridge mapper support to learn rust
 	\item Included game modifications not possible on original hardware by hooking into memory reads/writes and import/export support for Super Mario Bros. levels
 \end{tightemize}
 
 \sectionsep
-\iftrue
+\iffalse
 \runsubsection{GlideN64} \hfill
 \location{C++, OpenGL}
 \begin{tightemize}
-	\item Created patch adding stereo rendering and google cardboard support to GlideN64 Nintendo 64 graphics plugin
+	\item Created patch adding stereo rendering and google cardboard support to GlideN64 Nintendo 64 graphics plugin (too unstable to merge)
 	\item Applies eye translation after projection matrix is applied but before perspective divide, avoiding toe-in artifacts
 \end{tightemize}
 \sectionsep
 \fi
 
 \iftrue
-\runsubsection{VR Space Shooter} \hfill
-\location{Java, OpenGL, BoofCV}
-\begin{tightemize}
-	\item Google Cardboard shooter game using head tracking to allow player to shoot enemies and dodge obstacles
-	\item Uses OpenGL for rendering, BoofCV on a laptop to track the position of player’s head
-\end{tightemize}
-\sectionsep
-\fi
-
-\iffalse
-\runsubsection{Rust/Servo Gui Framework Demo} \hfill
+\runsubsection{Rust/Servo Gui Demo} \hfill
 \location{Rust}
 \begin{tightemize}
-	\item Fork of servo browser engine supporting a simple react-like rust html macro and native rust event handlers
+	\item Fork of servo browser engine demonstrating a simple react-like rust html macro and native rust event handlers
 	\item Like electron, but using native rust + servo instead of javascript + webkit. 
 \end{tightemize}
 \sectionsep

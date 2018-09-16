@@ -34,50 +34,37 @@
 
         <h2>About Me</h2>
         <div class="text">
-            <p>I am a Computer Science student at the University of Waterloo in Canada, interested in Free & Open Source software, scalable systems, computer graphics and emulation. I have quickly applied new languages and tools to my work, and I love building a deep understanding of problems I am working on. In my free time, I play oboe and collect old computers. You can contact me at <a href="mailto:hello@justinmichaud.com">hello@justinmichaud.com</a></p>
-        </div>
-
-        <h2>Blog posts</h2>
-        <div class="blog">
-            <div class="medium-post">
-	            <a href="https://medium.com/@justin_michaud/super-mario-bros-level-generation-using-torch-rnn-726ddea7e9b7" title="https://medium.com/@justin_michaud/super-mario-bros-level-generation-using-torch-rnn-726ddea7e9b7" class="medium-link">
-	                <strong class="medium-title">Super Mario Bros. Level Generation Using Torch-RNN</strong>
-	                <br />
-	                <em class="medium-subtitle">Read more...</em>
-	                medium.com
-	            </a>
-	        <a href="https://medium.com/@justin_michaud/super-mario-bros-level-generation-using-torch-rnn-726ddea7e9b7" class="medium-image" style="background: rgba(0, 0, 0, 0) url('https://cdn-images-1.medium.com/fit/t/320/320/1*RUN8k0ymOAmpTQTM1C6MQA.png') no-repeat scroll 50% 50% / cover padding-box border-box;"></a>
-</div>
+            <p>I am a Computer Science student at the University of Waterloo in Canada, interested in Free & Open Source software, computer graphics and emulation. In my free time, I play oboe and collect old computers. You can contact me at <a href="mailto:hello@justinmichaud.com">hello@justinmichaud.com</a></p>
         </div>
 
         <h2>Projects</h2>
         <div class="projects">
-            <!-- <div>
+            <div>
                 <div class="left"><img src="img/stereo.png" /></div>
                 <div class="text">
                     <h3>GlideN64</h3>
-                    <p>Contributed stereoscopic rendering support to GlideN64 Nintendo 64 graphics plugin. Every draw call that the game makes to the high-level emulation code is doubled. Then, after the game applies its projection matrix to vertices, this "untransforms" them from clip space, applies the eye translation, then re-projects them to avoid toe-in artifacts. <a href="https://github.com/gonetz/GLideN64">Source</a></p>
+                    <p>Made a patch adding stereoscopic rendering support to GlideN64 Nintendo 64 graphics plugin. Every draw call that the game makes to the high-level emulation code is doubled. Then, after the game applies its projection matrix to vertices, this "untransforms" them from clip space, applies the eye translation, then re-projects them to avoid toe-in artifacts. It is too unstable to be merged. <a href="https://github.com/justinmichaud/GLideN64">Source</a></p>
                 </div>
-            </div> -->
+            </div>
             <div>
                 <div class="left"><img src="img/ask1.png" /></div>
                 <div class="text">
                     <h3>AnySoftKeyboard</h3>
-                    <p>Open Source Contribution: I contributed gesture typing to the popular AnySoftKeyboard project, similar to the stock Google keyboard. My contributions include the core gesture detector, which matches words by detecting path corners and measuring the distance to the input path. <a href="https://github.com/AnySoftKeyboard/AnySoftKeyboard">Source</a></p>
+                    <p>I contributed a gesture typing implementation to the popular AnySoftKeyboard project, similar to the stock Google keyboard. It works by generating simulated paths for words, then comparing them to the input path. There is still a lot of work to be done to improve accuracy, usability and performance. <a href="https://github.com/AnySoftKeyboard/AnySoftKeyboard">Source</a></p>
                 </div>
             </div>
             <div>
                 <div class="left"><img src="img/emu.png" /></div>
                 <div class="text">
                     <h3>NES Emulator</h3>
-                    <p>An NES emulator written in rust, and compiled to webassembly with emscripten. It has been successfully tested with Donkey Kong and Super Mario Bros, and passes nestest. It also includes optional modifications to Super Mario Bros by hooking into memory reads/writes. Next steps will be to support more mappers (cartrige hardware) and sound.<a href="https://github.com/justinmichaud/rust-nes-emulator">Source</a> <a href="smb_challenge/index.html">Play Now</a></p>
+                    <p>An NES emulator written in rust. It has partial support for Mapper 4 and audio. An old version also includes optional modifications to Super Mario Bros by hooking into memory reads/writes, allowing new levels to be loaded in and out. <a href="https://github.com/justinmichaud/rust-nes-emulator2">Source (new version, with partial audio and Mapper 4 support)</a> <a href="https://github.com/justinmichaud/rust-nes-emulator">Source (old version)</a> <a href="smb_challenge/index.html">Play Now (old version with game modifications)</a></p>
                 </div>
             </div>
             <div>
                 <div class="left"><img src="img/ion.png" /></div>
                 <div class="text">
                     <h3>Rust Gui Framework Demo</h3>
-                    <p>A fork of servo browser engine supporting a simple react-like declarative rust html macro and native rust event handlers. Like electron, but using native rust + servo instead of javascript + webkit. <a href="https://github.com/justinmichaud/ion">Source</a></p>
+                    <p>A demo fork of servo browser engine supporting a simple react-like declarative rust html macro and native rust event handlers. Like electron, but using native rust + servo instead of javascript + webkit. <a href="https://github.com/justinmichaud/ion">Source</a></p>
                 </div>
             </div>
             <div>
@@ -122,6 +109,19 @@
                     <p>A small, Open Source Android transit application using the Sudbury Open Data API, available on F-Droid. It allowed me to contribute to Open Source and my community, and to gain familiarity with the OpenStreetMap api. <a href="https://github.com/justinmichaud/Sudbury-Transit">Source</a></p>
                 </div>
             </div>
+        </div>
+
+        <h2>Blog posts</h2>
+        <div class="blog">
+            <div class="medium-post">
+	            <a href="https://medium.com/@justin_michaud/super-mario-bros-level-generation-using-torch-rnn-726ddea7e9b7" title="https://medium.com/@justin_michaud/super-mario-bros-level-generation-using-torch-rnn-726ddea7e9b7" class="medium-link">
+	                <strong class="medium-title">Super Mario Bros. Level Generation Using Torch-RNN</strong>
+	                <br />
+	                <em class="medium-subtitle">Read more...</em>
+	                medium.com
+	            </a>
+	        <a href="https://medium.com/@justin_michaud/super-mario-bros-level-generation-using-torch-rnn-726ddea7e9b7" class="medium-image" style="background: rgba(0, 0, 0, 0) url('https://cdn-images-1.medium.com/fit/t/320/320/1*RUN8k0ymOAmpTQTM1C6MQA.png') no-repeat scroll 50% 50% / cover padding-box border-box;"></a>
+</div>
         </div>
 
 	<!-- I would love to replace this proprietary JS with an open source solution if I ever get my own web host -->
