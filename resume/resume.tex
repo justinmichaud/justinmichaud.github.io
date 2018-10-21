@@ -54,7 +54,7 @@
 \vspace{7pt}
 \begin{tightemize}
 	\item Oboe with UW Orchestra
-	\item Collecting old computers (Mac classic, Commodore 64)
+	\item Collecting old computers (Mac classic, Powerbook 190cs and Commodore 64 so far)
 \end{tightemize}
 
 \vspace{20pt}
@@ -62,7 +62,7 @@
 \section{Education} 
 \runsubsection{University of Waterloo}
 
-\descript{2B Computer Science}
+\descript{3A Computer Science}
 
 \location{Sept 2016 - June 2021}
 
@@ -87,7 +87,6 @@
 \location{Kafka, Scala, Akka | San Francisco, CA}
 
 \begin{tightemize}
-	\item Reduced database load by developing replacement for service that published records to Kafka from MySQL
 	\item Built Scala/Akka Streams service to allow filtering and fanout of kafka records to multiple clusters
 	\item Went on-call for team's mission-critical services
 	
@@ -104,14 +103,9 @@
 \end{tightemize}
 \sectionsep
 
-\runsubsection{YMCA,}\descript{Software Development Assistant} \hfill \location{Jun 2014 – Aug 2016}
+\runsubsection{YMCA,}\descript{Software \& IT Assistant} \hfill \location{Jun 2014 – Aug 2016}
 
 \location{Java, PHP | Sudbury, ON}
-\vspace{3pt}
-
-\begin{tightemize}
-	\item Built low-bandwidth remote support tool using UDP hole-punching to tunnel TCP connections without port forwarding
-\end{tightemize}
 \sectionsep
 
 \runsection{Projects} \hfill \location{More at \href{http://justinmichaud.com}{justinmichaud.com}}
@@ -122,35 +116,33 @@
 \location{Java, C++, Android, JNI}
 \begin{tightemize}
 	\item Contributed gesture typing feature to create first open source swipe keyboard for Android
-	\item Compares input path to simulated paths, measuring distance along path to find most likely word; Next steps are to improve accuracy, usability and performance
+	\item Compares input path to pre-computed simulated paths, measuring distance along path to find most likely word; Next steps are to improve accuracy, usability and performance
 \end{tightemize}
 
 \sectionsep
 
 \runsubsection{Rust Nes Emulator} \hfill
-\location{Rust, 6502 ASM}
+\location{Rust}
 \begin{tightemize}
 	\item Created NES emulator with partial audio and cartridge mapper support to learn rust
 	\item Included game modifications not possible on original hardware by hooking into memory reads/writes and import/export support for Super Mario Bros. levels
 \end{tightemize}
 
 \sectionsep
-\iffalse
 \runsubsection{GlideN64} \hfill
 \location{C++, OpenGL}
 \begin{tightemize}
-	\item Created patch adding stereo rendering and google cardboard support to GlideN64 Nintendo 64 graphics plugin (too unstable to merge)
-	\item Applies eye translation after projection matrix is applied but before perspective divide, avoiding toe-in artifacts
+	\item Created demo adding stereo rendering and google cardboard support to GlideN64 Nintendo 64 graphics plugin (too unstable to merge)
+	\item Applies eye translation after projection matrix is applied but before perspective divide; Avoids toe-in, but causes depth buffer issues
 \end{tightemize}
 \sectionsep
-\fi
 
 \iftrue
-\runsubsection{Rust/Servo Gui Demo} \hfill
+\runsubsection{Servo Native Rust Demo} \hfill
 \location{Rust}
 \begin{tightemize}
-	\item Fork of servo browser engine demonstrating a simple react-like rust html macro and native rust event handlers
-	\item Like electron, but using native rust + servo instead of javascript + webkit. 
+	\item Massive hack to fit servo browser engine with native rust event handlers, with a very simple TODO list demo
+	\item Idea is to be like electron, but with rust/servo instead of javascript/blink
 \end{tightemize}
 \sectionsep
 \fi

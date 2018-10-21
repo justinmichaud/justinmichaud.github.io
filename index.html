@@ -28,13 +28,13 @@
 
         <header>
             <h1>Justin Michaud</h1>
-            <h5>Junior Developer | Open Source Enthusiast</h5>
+            <h5>Student | Open Source Enthusiast</h5>
             <p><a href="https://github.com/justinmichaud">Github</a> - <a href="mailto:hello@justinmichaud.com">Email</a> - <a href="resume/resume.pdf">Resume</a></p>
         </header>
 
         <h2>About Me</h2>
         <div class="text">
-            <p>I am a Computer Science student at the University of Waterloo in Canada, interested in Free & Open Source software, computer graphics and emulation. In my free time, I play oboe and collect old computers. You can contact me at <a href="mailto:hello@justinmichaud.com">hello@justinmichaud.com</a></p>
+            <p>I am a Computer Science student at the University of Waterloo in Canada, interested in Free & Open Source software, browsers and emulation. In my free time, I play oboe and collect old computers. You can contact me at <a href="mailto:hello@justinmichaud.com">hello@justinmichaud.com</a></p>
         </div>
 
         <h2>Projects</h2>
@@ -43,28 +43,28 @@
                 <div class="left"><img src="img/stereo.png" /></div>
                 <div class="text">
                     <h3>GlideN64</h3>
-                    <p>Made a patch adding stereoscopic rendering support to GlideN64 Nintendo 64 graphics plugin. Every draw call that the game makes to the high-level emulation code is doubled. Then, after the game applies its projection matrix to vertices, this "untransforms" them from clip space, applies the eye translation, then re-projects them to avoid toe-in artifacts. It is too unstable to be merged. <a href="https://github.com/justinmichaud/GLideN64">Source</a></p>
+                    <p>I made a demo adding stereoscopic rendering support to GlideN64 Nintendo 64 graphics plugin. Every draw call that the game makes to the high-level emulation code is doubled. Then, after the game applies its projection matrix to vertices, the eye translation is applied. This avoids toe-in artifacts, but causes depth issues. It is not compatible with low-level emulation, and is too unstable to be merged. <a href="https://github.com/justinmichaud/GLideN64">Source</a></p>
                 </div>
             </div>
             <div>
                 <div class="left"><img src="img/ask1.png" /></div>
                 <div class="text">
                     <h3>AnySoftKeyboard</h3>
-                    <p>I contributed a gesture typing implementation to the popular AnySoftKeyboard project, similar to the stock Google keyboard. It works by generating simulated paths for words, then comparing them to the input path. There is still a lot of work to be done to improve accuracy, usability and performance. <a href="https://github.com/AnySoftKeyboard/AnySoftKeyboard">Source</a></p>
+                    <p>I contributed a gesture typing implementation to the popular AnySoftKeyboard project. It works by generating simulated paths for words, then comparing them to the input path. There is still a lot of work to be done to improve accuracy, usability, performance and memory usage, since all of the matching is done after the entire gesture is complete. <a href="https://github.com/AnySoftKeyboard/AnySoftKeyboard">Source</a></p>
                 </div>
             </div>
             <div>
                 <div class="left"><img src="img/emu.png" /></div>
                 <div class="text">
                     <h3>NES Emulator</h3>
-                    <p>An NES emulator written in rust. It has partial support for Mapper 4 and audio. An old version also includes optional modifications to Super Mario Bros by hooking into memory reads/writes, allowing new levels to be loaded in and out. <a href="https://github.com/justinmichaud/rust-nes-emulator2">Source (new version, with partial audio and Mapper 4 support)</a> <a href="https://github.com/justinmichaud/rust-nes-emulator">Source (old version)</a> <a href="smb_challenge/index.html">Play Now (old version with game modifications)</a></p>
+                    <p>I made an NES emulator to learn rust. It has partial support for Mapper 4 (SMB2 and SMB3) and audio. An old version also includes optional modifications to Super Mario Bros by hooking into memory reads/writes, allowing new levels to be loaded in and out. <a href="https://github.com/justinmichaud/rust-nes-emulator2">Source</a> <a href="https://github.com/justinmichaud/rust-nes-emulator">Source (old version)</a> <a href="smb_challenge/index.html">Play Now (old version with game modifications)</a></p>
                 </div>
             </div>
             <div>
                 <div class="left"><img src="img/ion.png" /></div>
                 <div class="text">
                     <h3>Rust Gui Framework Demo</h3>
-                    <p>A demo fork of servo browser engine supporting a simple react-like declarative rust html macro and native rust event handlers. Like electron, but using native rust + servo instead of javascript + webkit. <a href="https://github.com/justinmichaud/ion">Source</a></p>
+                    <p>A demo of the servo browser engine supporting native rust event handlers. The goal is to be like electron, but using native rust + servo instead of javascript + blink. <a href="https://github.com/justinmichaud/ion">Source</a></p>
                 </div>
             </div>
             <div>
@@ -78,16 +78,17 @@
                 <div class="left"><img src="img/monad.png" /></div>
                 <div class="text">
                     <h3>What is a monad? (Lightning talk)</h3>
-                    <p>Lightning talk + Scala worksheets about Future, Try, and Option monads, plus some bonus worksheets on the IO monad and monad transformers. <a href="https://github.com/justinmichaud/scala-monad-worksheets/">Source</a></p>
+                    <p>Lightning talk + Scala worksheets about Future, Try, and Option monads, plus some bonus worksheets on the IO monad and monad transformers. I gave this while interning at PagerDuty so that I could wrap my head around Monads. <a href="https://github.com/justinmichaud/scala-monad-worksheets/">Source</a></p>
                 </div>
             </div>
             <div>
                 <div class="left"><img src="https://raw.githubusercontent.com/justinmichaud/rust-raytracer/master/out.png" /></div>
                 <div class="text">
                     <h3>Rust Raytracer</h3>
-                    <p>A small ray tracer built to try Rust. Basic reflection, refraction and shading are implemented, as well as simple perturbation to simulate surface roughness. While the code is a mess, it was interesting to learn about Rust's borrow checker, as well as its use of composition over inheritance. <a href="https://github.com/justinmichaud/rust-raytracer">Source</a></p>
+                    <p>A small ray tracer built to try Rust. Basic reflection, refraction and shading are implemented, as well as simple perturbation to simulate surface roughness. The code is a mess, but this was my first Rust project. <a href="https://github.com/justinmichaud/rust-raytracer">Source</a></p>
                 </div>
             </div>
+            <!--
             <div>
                 <div class="left"><img src="img/sacy1.png" /></div>
                 <div class="text">
@@ -95,11 +96,12 @@
                     <p>A web application to track clients, donations and client visits for the Sudbury Action Centre for Youth. Using Python and Django, it produced data that allowed them to gain insight into how clients use their services. I collected requirements from non-technical users, iterated frequently to ensure the application created value, and learned a new set of tools to increase maintainability.</p>
                 </div>
             </div>
+          -->
             <div>
                 <div class="left"><img src="img/nat1.png" /></div>
                 <div class="text">
                     <h3>Remote Support</h3>
-                    <p>An open-source remote support tool using Java and UDP hole-punching, developed to provide quick and simple ssh access through a NAT without port forwarding. It used Netty and UTP, a reliable protocol build on UDP, to tunnel multiple tcp connections with a small discovery server to handle NAT traversal. <a href="https://github.com/justinmichaud/remote-support">Source</a></p>
+                    <p>An open-source remote support tool using Java and UDP hole-punching, developed to provide quick and simple ssh access through a NAT without port forwarding. It used Netty and UTP, a reliable protocol build on UDP, to tunnel multiple tcp connections with a small discovery server to handle NAT traversal. It barely works, but it was a very interesting learning experience. <a href="https://github.com/justinmichaud/remote-support">Source</a></p>
                 </div>
             </div>
             <div>
@@ -123,17 +125,5 @@
 	        <a href="https://medium.com/@justin_michaud/super-mario-bros-level-generation-using-torch-rnn-726ddea7e9b7" class="medium-image" style="background: rgba(0, 0, 0, 0) url('https://cdn-images-1.medium.com/fit/t/320/320/1*RUN8k0ymOAmpTQTM1C6MQA.png') no-repeat scroll 50% 50% / cover padding-box border-box;"></a>
 </div>
         </div>
-
-	<!-- I would love to replace this proprietary JS with an open source solution if I ever get my own web host -->
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117550562-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-117550562-1');
-	</script>
-
     </body>
 </html>
