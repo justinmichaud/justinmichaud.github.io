@@ -53,7 +53,7 @@
 \section{Hobbies}
 \vspace{7pt}
 \begin{tightemize}
-	\item Oboe with UW Orchestra
+	\item Playing Oboe
 	\item Collecting old computers (Mac classic, Powerbook 190cs and Commodore 64 so far)
 \end{tightemize}
 
@@ -62,9 +62,9 @@
 \section{Education} 
 \runsubsection{University of Waterloo}
 
-\descript{3A Computer Science}
+\descript{4A Computer Science}
 
-\location{Sept 2016 - June 2021}
+\location{Sept 2016 - April 2021}
 
 \location{Waterloo, ON}
 
@@ -72,14 +72,25 @@
 \hfill
 \begin{minipage}[t]{0.64\textwidth}
 \section{Experience}
-\runsubsection{Apple,}\descript{WebKit Layout \& Rendering Intern} \hfill \location{Sep 2018 – Dec 2018}
+\runsubsection{Apple,}\descript{JavaScriptCore Intern} \hfill \location{Jan – April 2020}
 
 \location{C++ | Cupertino, CA}
 \vspace{10pt}
+\begin{tightemize}
+	\item Implemented inline caching optimizations for property deletion, giving 1\% speedometer progression (\href{https://webkit.org/blog/10298/inline-caching-delete/}{blog post})
+	
+\end{tightemize}
+\hfill \location{May – Aug 2019}
+\begin{tightemize}
+	\item Implemented strength reductions and instruction selection patterns to improve code generation, giving 1\% speedometer progression.
+	\item Implemented WebAssembly Reference Types proposal, allowing opaque JSValues to be used as values within WASM code.
+	
+\end{tightemize}
+\sectionsep
+\runsubsection{Apple,}\descript{WebKit Layout \& Rendering Intern} \hfill \location{Sep 2018 – Dec 2018}
 
 \begin{tightemize}
-	\item In Progress
-	
+	\item Developed prototype of CSS Painting API.
 \end{tightemize}
 \sectionsep
 \runsubsection{PagerDuty,}\descript{Software Engineering Intern} \hfill \location{Jan 2018 – April 2018}
@@ -98,8 +109,7 @@
 \vspace{3pt}
 
 \begin{tightemize}
-	\item Optimized MySQL queries by adding indexes and denormalized columns, allowing incidents dashboard to support millions of incidents without any maintenance downtime
-	\item Implemented incident priority editing and mobile support using ruby, EmberJS and iOS/Android SDKs
+	\item Optimized MySQL queries to allow incidents dashboard to support millions of records without any maintenance downtime
 \end{tightemize}
 \sectionsep
 
@@ -115,8 +125,8 @@
 \runsubsection{AnySoftKeyboard Contributor} \hfill
 \location{Java, C++, Android, JNI}
 \begin{tightemize}
-	\item Contributed gesture typing feature to create first open source swipe keyboard for Android
-	\item Compares input path to pre-computed simulated paths, measuring distance along path to find most likely word; Next steps are to improve accuracy, usability and performance
+	\item Contributed simple gesture typing feature to open source Android keyboard AnySoftKeyboard; suffers from poor accuracy.
+	\item Compares input path to pre-computed simulated paths, measuring distance along path to find most likely word.
 \end{tightemize}
 
 \sectionsep
@@ -124,28 +134,17 @@
 \runsubsection{Rust Nes Emulator} \hfill
 \location{Rust}
 \begin{tightemize}
-	\item Created NES emulator with partial audio and cartridge mapper support to learn rust
-	\item Included game modifications not possible on original hardware by hooking into memory reads/writes and import/export support for Super Mario Bros. levels
+	\item Created NES emulator to learn rust
+	\item Included game modifications not possible on original hardware by hooking into memory reads/writes
 \end{tightemize}
 
 \sectionsep
 \runsubsection{GlideN64} \hfill
 \location{C++, OpenGL}
 \begin{tightemize}
-	\item Created demo adding stereo rendering and google cardboard support to GlideN64 Nintendo 64 graphics plugin (too unstable to merge)
-	\item Applies eye translation after projection matrix is applied but before perspective divide; Avoids toe-in, but causes depth buffer issues
+	\item Created demo adding stereo rendering and google cardboard support to GlideN64's high-level graphics emulator
 \end{tightemize}
 \sectionsep
-
-\iftrue
-\runsubsection{Servo Native Rust Demo} \hfill
-\location{Rust}
-\begin{tightemize}
-	\item Massive hack to fit servo browser engine with native rust event handlers, with a very simple TODO list demo
-	\item Idea is to be like electron, but with rust/servo instead of javascript/blink
-\end{tightemize}
-\sectionsep
-\fi
 
 \end{minipage}
 
