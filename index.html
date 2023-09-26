@@ -59,14 +59,14 @@
                 <div class="left"><img src="img/emu.png" /></div>
                 <div class="text">
                     <h3>NES Emulator</h3>
-                    <p>I made an NES emulator to learn rust. It has partial support for Mapper 4 (SMB2 and SMB3) and audio. It also includes optional modifications to Super Mario Bros by hooking into memory reads/writes, allowing new levels to be loaded in and out. <a href="https://github.com/justinmichaud/rust-nes-emulator2">Source</a> <a href="ml_level/index.html">Play Now (ML-generated level)</a> <a href="smb_challenge/index.html">Play Now (game modifications)</a></p>
+                    <p>I made an NES emulator to learn rust while in my first year of university. It has partial support for Mapper 4 (SMB2 and SMB3) and audio. It also includes optional modifications to Super Mario Bros by hooking into memory reads/writes, allowing new levels to be loaded in and out. In 2022, I converted this into a WASM benchmark subtest. <a href="https://github.com/justinmichaud/rust-nes-emulator2">Source</a> <a href="smb_challenge/index.html">Play Now (game modifications)</a> <a href="8bitbench/">Benchmark your browser!</a></p>
                 </div>
             </div>
             <div>
                 <div class="left"><img src="img/stereo.png" /></div>
                 <div class="text">
                     <h3>GlideN64</h3>
-                    <p>I made a demo adding stereoscopic rendering support to GlideN64 Nintendo 64 graphics plugin. Every draw call that the game makes to the high-level emulation code is doubled. Then, after the game applies its projection matrix to vertices, the eye translation is applied. This avoids toe-in artifacts, but causes depth issues. It is not compatible with low-level emulation, and is too unstable to be merged. <a href="https://github.com/justinmichaud/GLideN64">Source</a></p>
+                    <p>I made a demo adding stereoscopic rendering support to GlideN64 Nintendo 64 graphics plugin. Every draw call that the game makes to the high-level emulation code is doubled. Then, after the game applies its projection matrix to vertices, the eye translation is applied. This avoids toe-in artifacts, but causes depth fighting issues. It is not compatible with low-level emulation (direct emulation of the N64 graphics chip), and is too unstable to be merged. <a href="https://github.com/justinmichaud/GLideN64">Source</a></p>
                 </div>
             </div>
             <div>
@@ -77,10 +77,11 @@
                 </div>
             </div>
             <div>
-                <div class="left"><img src="img/monad.png" /></div>
+                <div class="left"><img src="https://raw.githubusercontent.com/justinmichaud/pagerduty-doom/master/screenshots/3.png" /></div>
                 <div class="text">
-                    <h3>What is a monad? (Lightning talk)</h3>
-                    <p>Lightning talk + Scala worksheets about Future, Try, and Option monads, plus some bonus worksheets on the IO monad and monad transformers. I gave this while interning at PagerDuty so that I could wrap my head around Monads. <a href="https://github.com/justinmichaud/scala-monad-worksheets/">Source</a></p>
+                    <h3>PagerDOOM</h3>
+                    <p>This was a hack day project while interning at PagerDuty. This is a chocolate DOOM mod that spawns an enemy for each
+                        incident in your PD account. Resolve incidents by shooting them! <a href="https://github.com/justinmichaud/pagerduty-doom/tree/master">Source</a></p>
                 </div>
             </div>
         </div>
